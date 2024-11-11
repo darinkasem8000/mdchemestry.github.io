@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Game Studio :Silent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="logo">Frozen Game Studio :Silent</h1>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#Games">Games</a>
+      <a href="index.html#AboutMe">About</a>
+      <a href="index.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#Games">Games</a>
+    <a href="index.html#AboutMe">About</a>
+    <a href="index.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="header-screenshot">
+      <h2>Silent: Abandoned</h2>
+      <img id="main-screenshot" src="Images/Games/Silent/Header.jpg" alt="Game Screenshot" class="game-screenshot">
+    </section>
+
+    <section class="other-screenshots">
+      <div class="grid-container">
+        <div class="grid-item">
+          <img id="screenshot1" src="Images/Games/Silent/1.jpg" alt="Game Screenshot" class="game-screenshot">
+        </div>
+        <div class="grid-item">
+          <img id="screenshot2" src="Images/Games/Silent/2.jpg" alt="Game Screenshot" class="game-screenshot">
+        </div>
+        <div class="grid-item">
+          <img id="screenshot3" src="Images/Games/Silent/3.jpg" alt="Game Screenshot" class="game-screenshot">
+        </div>
+        <div class="grid-item">
+          <img id="screenshot4" src="Images/Games/Silent/4.jpg" alt="Game Screenshot" class="game-screenshot">
+        </div>
+      </div>
+    </section>
+    
+    <section class="game-info">
+      <h2>Game Description</h2>
+      <p>Two brothers go to a house to vlog. An abandoned and creepy house when they enter one is stuck inside the other disappears outside.</p>
+      <p class="game-genre">Genre: Horror</p>
+      <p class="game-genre">Platforms: PC</p>
+      <div class="download-links">
+        <a href="#" download>Wishlist On Steam</a>
+        <!-- <a href="#" download>Download (Mediafire)</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <!-- Footer content goes here -->
+  </footer>
+
+  <script src="2.js"></script>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active');
+      mobileNav.classList.toggle('is-active');
+    });
+  </script>
+</body>
+</html>
